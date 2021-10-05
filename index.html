@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        form{
+            width:300px;
+        }
+        
+        input{
+            display: block;
+            width:100%;
+            margin-bottom: 15px;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td{
+           border:1px solid black; 
+           padding: 10px;           
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <label for="start-page">Стартовая страница</label>
+    <input class="start-page" type="text" id="start-page">
+    <label for="input-text">Текст описи документов</label>
+    <textarea class="input-text" type="text" id="input-text"></textarea>      
+    </form>
+    <button class="start-btn">Посчитать</button>  
+    <table>
+        <tbody class="inventory">
+        <tr>
+            <th>№ п/п</th><th>Наименование</th><th>Кол-во стр.</th><th>№ стр.</th>
+        </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
